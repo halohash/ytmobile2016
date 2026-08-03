@@ -1,235 +1,39 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
     <head id="head">
         <style name="www-roboto">
             @font-face {
                 font-family: 'Roboto';
                 font-style: normal;
                 font-weight: 400;
-                src: local('Roboto Regular'),local('Roboto-Regular'),url(//fonts.gstatic.com/s/roboto/v15/sTdaA6j0Psb920Vjv-mrzH-_kf6ByYO6CLYdB4HQE-Y.woff2)format('woff2');
-                unicode-range: U+0460-052F,U+20B4,U+2DE0-2DFF,U+A640-A69F;
-            }
-
-            @font-face {
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 400;
-                src: local('Roboto Regular'),local('Roboto-Regular'),url(//fonts.gstatic.com/s/roboto/v15/uYECMKoHcO9x1wdmbyHIm3-_kf6ByYO6CLYdB4HQE-Y.woff2)format('woff2');
-                unicode-range: U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;
-            }
-
-            @font-face {
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 400;
-                src: local('Roboto Regular'),local('Roboto-Regular'),url(//fonts.gstatic.com/s/roboto/v15/tnj4SB6DNbdaQnsM8CFqBX-_kf6ByYO6CLYdB4HQE-Y.woff2)format('woff2');
-                unicode-range: U+1F00-1FFF;
-            }
-
-            @font-face {
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 400;
-                src: local('Roboto Regular'),local('Roboto-Regular'),url(//fonts.gstatic.com/s/roboto/v15/_VYFx-s824kXq_Ul2BHqYH-_kf6ByYO6CLYdB4HQE-Y.woff2)format('woff2');
-                unicode-range: U+0370-03FF;
-            }
-
-            @font-face {
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 400;
-                src: local('Roboto Regular'),local('Roboto-Regular'),url(//fonts.gstatic.com/s/roboto/v15/NJ4vxlgWwWbEsv18dAhqnn-_kf6ByYO6CLYdB4HQE-Y.woff2)format('woff2');
-                unicode-range: U+0102-0103,U+1EA0-1EF1,U+20AB;
-            }
-
-            @font-face {
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 400;
-                src: local('Roboto Regular'),local('Roboto-Regular'),url(//fonts.gstatic.com/s/roboto/v15/Ks_cVxiCiwUWVsFWFA3Bjn-_kf6ByYO6CLYdB4HQE-Y.woff2)format('woff2');
-                unicode-range: U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF;
-            }
-
-            @font-face {
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 400;
-                src: local('Roboto Regular'),local('Roboto-Regular'),url(//fonts.gstatic.com/s/roboto/v15/oMMgfZMQthOryQo9n22dcuvvDin1pK8aKteLpeZ5c0A.woff2)format('woff2');
-                unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000;
+                src: local('Roboto Regular'),local('Roboto-Regular'),url(//fonts.gstatic.com/s/roboto/v15/2UX7WLTfW3W8TclTUvlFyQ.woff#Roboto)format('woff');
             }
 
             @font-face {
                 font-family: 'Roboto';
                 font-style: normal;
                 font-weight: 500;
-                src: local('Roboto Medium'),local('Roboto-Medium'),url(//fonts.gstatic.com/s/roboto/v15/ZLqKeelYbATG60EpZBSDy4X0hVgzZQUfRDuZrPvH3D8.woff2)format('woff2');
-                unicode-range: U+0460-052F,U+20B4,U+2DE0-2DFF,U+A640-A69F;
+                src: local('Roboto Medium'),local('Roboto-Medium'),url(//fonts.gstatic.com/s/roboto/v15/RxZJdnzeo3R5zSexge8UUT8E0i7KZn-EPnyo3HZu7kw.woff#Roboto)format('woff');
             }
 
             @font-face {
                 font-family: 'Roboto';
-                font-style: normal;
+                font-style: italic;
                 font-weight: 500;
-                src: local('Roboto Medium'),local('Roboto-Medium'),url(//fonts.gstatic.com/s/roboto/v15/oHi30kwQWvpCWqAhzHcCSIX0hVgzZQUfRDuZrPvH3D8.woff2)format('woff2');
-                unicode-range: U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;
-            }
-
-            @font-face {
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 500;
-                src: local('Roboto Medium'),local('Roboto-Medium'),url(//fonts.gstatic.com/s/roboto/v15/rGvHdJnr2l75qb0YND9NyIX0hVgzZQUfRDuZrPvH3D8.woff2)format('woff2');
-                unicode-range: U+1F00-1FFF;
-            }
-
-            @font-face {
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 500;
-                src: local('Roboto Medium'),local('Roboto-Medium'),url(//fonts.gstatic.com/s/roboto/v15/mx9Uck6uB63VIKFYnEMXrYX0hVgzZQUfRDuZrPvH3D8.woff2)format('woff2');
-                unicode-range: U+0370-03FF;
-            }
-
-            @font-face {
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 500;
-                src: local('Roboto Medium'),local('Roboto-Medium'),url(//fonts.gstatic.com/s/roboto/v15/mbmhprMH69Zi6eEPBYVFhYX0hVgzZQUfRDuZrPvH3D8.woff2)format('woff2');
-                unicode-range: U+0102-0103,U+1EA0-1EF1,U+20AB;
-            }
-
-            @font-face {
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 500;
-                src: local('Roboto Medium'),local('Roboto-Medium'),url(//fonts.gstatic.com/s/roboto/v15/oOeFwZNlrTefzLYmlVV1UIX0hVgzZQUfRDuZrPvH3D8.woff2)format('woff2');
-                unicode-range: U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF;
-            }
-
-            @font-face {
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 500;
-                src: local('Roboto Medium'),local('Roboto-Medium'),url(//fonts.gstatic.com/s/roboto/v15/RxZJdnzeo3R5zSexge8UUZBw1xU1rKptJj_0jans920.woff2)format('woff2');
-                unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000;
+                src: local('Roboto Medium Italic'),local('Roboto-MediumItalic'),url(//fonts.gstatic.com/s/roboto/v15/OLffGBTaF0XFOW1gnuHF0YbN6UDyHWBl620a-IRfuBk.woff#Roboto)format('woff');
             }
 
             @font-face {
                 font-family: 'Roboto';
                 font-style: italic;
                 font-weight: 400;
-                src: local('Roboto Italic'),local('Roboto-Italic'),url(//fonts.gstatic.com/s/roboto/v15/WxrXJa0C3KdtC7lMafG4dRkAz4rYn47Zy2rvigWQf6w.woff2)format('woff2');
-                unicode-range: U+0460-052F,U+20B4,U+2DE0-2DFF,U+A640-A69F;
-            }
-
-            @font-face {
-                font-family: 'Roboto';
-                font-style: italic;
-                font-weight: 400;
-                src: local('Roboto Italic'),local('Roboto-Italic'),url(//fonts.gstatic.com/s/roboto/v15/OpXUqTo0UgQQhGj_SFdLWBkAz4rYn47Zy2rvigWQf6w.woff2)format('woff2');
-                unicode-range: U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;
-            }
-
-            @font-face {
-                font-family: 'Roboto';
-                font-style: italic;
-                font-weight: 400;
-                src: local('Roboto Italic'),local('Roboto-Italic'),url(//fonts.gstatic.com/s/roboto/v15/1hZf02POANh32k2VkgEoUBkAz4rYn47Zy2rvigWQf6w.woff2)format('woff2');
-                unicode-range: U+1F00-1FFF;
-            }
-
-            @font-face {
-                font-family: 'Roboto';
-                font-style: italic;
-                font-weight: 400;
-                src: local('Roboto Italic'),local('Roboto-Italic'),url(//fonts.gstatic.com/s/roboto/v15/cDKhRaXnQTOVbaoxwdOr9xkAz4rYn47Zy2rvigWQf6w.woff2)format('woff2');
-                unicode-range: U+0370-03FF;
-            }
-
-            @font-face {
-                font-family: 'Roboto';
-                font-style: italic;
-                font-weight: 400;
-                src: local('Roboto Italic'),local('Roboto-Italic'),url(//fonts.gstatic.com/s/roboto/v15/K23cxWVTrIFD6DJsEVi07RkAz4rYn47Zy2rvigWQf6w.woff2)format('woff2');
-                unicode-range: U+0102-0103,U+1EA0-1EF1,U+20AB;
-            }
-
-            @font-face {
-                font-family: 'Roboto';
-                font-style: italic;
-                font-weight: 400;
-                src: local('Roboto Italic'),local('Roboto-Italic'),url(//fonts.gstatic.com/s/roboto/v15/vSzulfKSK0LLjjfeaxcREhkAz4rYn47Zy2rvigWQf6w.woff2)format('woff2');
-                unicode-range: U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF;
-            }
-
-            @font-face {
-                font-family: 'Roboto';
-                font-style: italic;
-                font-weight: 400;
-                src: local('Roboto Italic'),local('Roboto-Italic'),url(//fonts.gstatic.com/s/roboto/v15/vPcynSL0qHq_6dX7lKVByXYhjbSpvc47ee6xR_80Hnw.woff2)format('woff2');
-                unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000;
-            }
-
-            @font-face {
-                font-family: 'Roboto';
-                font-style: italic;
-                font-weight: 500;
-                src: local('Roboto Medium Italic'),local('Roboto-MediumItalic'),url(//fonts.gstatic.com/s/roboto/v15/OLffGBTaF0XFOW1gnuHF0fZraR2Tg8w2lzm7kLNL0-w.woff2)format('woff2');
-                unicode-range: U+0460-052F,U+20B4,U+2DE0-2DFF,U+A640-A69F;
-            }
-
-            @font-face {
-                font-family: 'Roboto';
-                font-style: italic;
-                font-weight: 500;
-                src: local('Roboto Medium Italic'),local('Roboto-MediumItalic'),url(//fonts.gstatic.com/s/roboto/v15/OLffGBTaF0XFOW1gnuHF0V4sYYdJg5dU2qzJEVSuta0.woff2)format('woff2');
-                unicode-range: U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;
-            }
-
-            @font-face {
-                font-family: 'Roboto';
-                font-style: italic;
-                font-weight: 500;
-                src: local('Roboto Medium Italic'),local('Roboto-MediumItalic'),url(//fonts.gstatic.com/s/roboto/v15/OLffGBTaF0XFOW1gnuHF0VBW26QxpSj-_ZKm_xT4hWw.woff2)format('woff2');
-                unicode-range: U+1F00-1FFF;
-            }
-
-            @font-face {
-                font-family: 'Roboto';
-                font-style: italic;
-                font-weight: 500;
-                src: local('Roboto Medium Italic'),local('Roboto-MediumItalic'),url(//fonts.gstatic.com/s/roboto/v15/OLffGBTaF0XFOW1gnuHF0Qt_Rm691LTebKfY2ZkKSmI.woff2)format('woff2');
-                unicode-range: U+0370-03FF;
-            }
-
-            @font-face {
-                font-family: 'Roboto';
-                font-style: italic;
-                font-weight: 500;
-                src: local('Roboto Medium Italic'),local('Roboto-MediumItalic'),url(//fonts.gstatic.com/s/roboto/v15/OLffGBTaF0XFOW1gnuHF0dDiNsR5a-9Oe_Ivpu8XWlY.woff2)format('woff2');
-                unicode-range: U+0102-0103,U+1EA0-1EF1,U+20AB;
-            }
-
-            @font-face {
-                font-family: 'Roboto';
-                font-style: italic;
-                font-weight: 500;
-                src: local('Roboto Medium Italic'),local('Roboto-MediumItalic'),url(//fonts.gstatic.com/s/roboto/v15/OLffGBTaF0XFOW1gnuHF0aE8kM4xWR1_1bYURRojRGc.woff2)format('woff2');
-                unicode-range: U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF;
-            }
-
-            @font-face {
-                font-family: 'Roboto';
-                font-style: italic;
-                font-weight: 500;
-                src: local('Roboto Medium Italic'),local('Roboto-MediumItalic'),url(//fonts.gstatic.com/s/roboto/v15/OLffGBTaF0XFOW1gnuHF0Ygp9Q8gbYrhqGlRav_IXfk.woff2)format('woff2');
-                unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000;
+                src: local('Roboto Italic'),local('Roboto-Italic'),url(//fonts.gstatic.com/s/roboto/v15/1pO9eUAp8pSF8VnRTP3xnvesZW2xOQ-xsNqO47m55DA.woff#Roboto)format('woff');
             }
         </style>
         <script name="www-roboto">
             if (document.fonts && document.fonts.load) {
-                document.fonts.load("400 10pt Roboto", "F");
-                document.fonts.load("500 10pt Roboto", "F");
+                document.fonts.load("400 10pt Roboto", "E");
+                document.fonts.load("500 10pt Roboto", "E");
             }
         </script>
         <script>
@@ -301,16 +105,19 @@
             }
         </script>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densityDpi=medium-dpi">
+        <meta name="apple-itunes-app" content="app-id=544007664, app-argument=http://youtube.com/?referring_app=com.apple.mobilesafari-smartbanner">
+        <meta id="meta-app-title" name="apple-mobile-web-app-title" content="YouTube">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <link rel="icon" href="//s.ytimg.com/yts/favicon-vflz7uhzw.ico" type="image/x-icon">
         <link rel="shortcut icon" href="//s.ytimg.com/yts/favicon-vflz7uhzw.ico" type="image/x-icon">
         <title>YouTube</title>
-        <link rel="stylesheet" href="//s.ytimg.com/yts/cssbin/mobile-nirvana-tablet-mangled-vflxETAIH.css" id="page_css">
+        <link rel="stylesheet" href="//s.ytimg.com/yts/cssbin/mobile-nirvana-phone-mangled-vflbqRNRm.css" id="page_css">
+        <link rel="stylesheet" href="//s.ytimg.com/yts/cssbin/mobile-html5-player-mweb-mangled-vflWHp34u.css" id="player_css">
     </head>
     <body id="body" class="atom fusion-tn">
         <script>
             var original_url = encodeURIComponent(encodeURIComponent(encodeURIComponent(document.location.href)));
-            var iframe_url = 'https://accounts.google.com/ServiceLogin?uilel=3&amp;service=youtube&amp;passive=true&amp;continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Ffeature%3Dmobile_passive%26next%3Dhttp%253A%252F%252Fm.youtube.com%252Fsignin_passive%253Foriginal_url%253DORIGINAL_URL_PLACE_HOLDER%26hl%3Dfr%26action_handle_signin%3Dtrue%26app%3Dm&amp;hl=fr'.replace('ORIGINAL_URL_PLACE_HOLDER', original_url);
+            var iframe_url = 'https://accounts.google.com/ServiceLogin?ltmpl=mobile&amp;continue=https%3A%2F%2Fm.youtube.com%2Fsignin%3Ffeature%3Dmobile_passive%26hl%3Den%26app%3Dm%26next%3Dhttp%253A%252F%252Fm.youtube.com%252Fsignin_passive%253Foriginal_url%253DORIGINAL_URL_PLACE_HOLDER%26action_handle_signin%3Dtrue&amp;passive=true&amp;uilel=3&amp;hl=en&amp;service=youtube'.replace('ORIGINAL_URL_PLACE_HOLDER', original_url);
             document.write('<iframe src=\"' + iframe_url + '\" style=\"width:0;height:0;margin:0;border-width:0;padding:0;position:absolute;\"></iframe>');
         </script>
         <div id="player"></div>
@@ -331,172 +138,181 @@
     </script>
     <script>
         window.settings = {
-            "playerType": "html5",
-            "sessionIndex": null,
-            "lastReloadReason": "",
-            "thumbnail_sizes": {
-                "THUMBNAIL_unlimited_header": [964, 164],
-                "THUMBNAIL_playlist_video": [240, 136],
-                "_mgu": [240, 136],
-                "THUMBNAIL_guide_avatar": [28, 28],
-                "THUMBNAIL_playlist_panel_video": [240, 136],
-                "THUMBNAIL_compact_playlist": [240, 136],
-                "THUMBNAIL_compact_movie": [240, 136],
-                "THUMBNAIL_compact_radio": [240, 136],
-                "THUMBNAIL_feed_entry_owner": [28, 28],
-                "_mudb": [28, 28],
-                "_mvw": [24, 24],
-                "THUMBNAIL_playlist_header": [255, 144],
-                "_myf": [88, 88]
-            },
-            "loginURLFormat": "https:\/\/accounts.google.com\/ServiceLogin?uilel=3\u0026service=youtube\u0026passive=true\u0026continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Ffeature%3Dblazerbootstrap%26next%3D_NEXT_URL_PLACEHOLDER_%26hl%3Dfr%26action_handle_signin%3Dtrue%26app%3Dm\u0026hl=fr",
-            "build_timestamp": 1453968600,
-            "spriteInfo": {
-                "remote": {
-                    "bg_height": 124.0,
-                    "urls": {
-                        "low": "https:\/\/s.ytimg.com\/yts\/imgbin\/mobile-atom_remote-set-low-vflBgP7dp.png",
-                        "high": "https:\/\/s.ytimg.com\/yts\/imgbin\/mobile-atom_remote-set-high-vfljmYxbp.png",
-                        "vhigh": "https:\/\/s.ytimg.com\/yts\/imgbin\/mobile-atom_remote-set-vhigh-vflZQl7Q-.png"
-                    },
-                    "styles": [["_mts", 0, -24, 24, 24], ["_mss", 0, -52, 24, 24], ["_mqq", -28, -88, 36, 36], ["_mcr", -28, 0, 40, 40], ["_mar", -28, -44, 40, 40], ["_mlq", 0, 0, 20, 20], ["_mkq", 0, -80, 24, 20]],
-                    "bg_width": 68.0
-                },
-                "main": {
-                    "bg_height": 1739.0,
-                    "urls": {
-                        "low": "https:\/\/s.ytimg.com\/yts\/imgbin\/mobile-atom_tablet-set-low-vflJsAJZk.png",
-                        "high": "https:\/\/s.ytimg.com\/yts\/imgbin\/mobile-atom_tablet-set-high-vfldHCcWu.png",
-                        "vhigh": "https:\/\/s.ytimg.com\/yts\/imgbin\/mobile-atom_tablet-set-vhigh-vflmn0MsW.png"
-                    },
-                    "styles": [["_mvk", 0, -174, 24, 24], ["_mubb", 0, -889, 24, 24], ["_mqc", 0, -1403, 18, 18], ["_mxd", 0, -296, 20, 20], ["_mlv", 0, -1687, 24, 24], ["_moe", -24, -445, 12, 20], ["_mne", 0, -1271, 24, 24], ["_mpt", -23, -52, 12, 8], ["_mlr", -28, -1177, 8, 8], ["_mwi", -23, -64, 13, 14], ["_mqj", 0, -260, 32, 32], ["_mgk", 0, -800, 29, 29], ["_mez", 0, -1353, 12, 12], ["_mdz", 0, -1587, 12, 12], ["_msd", 0, -469, 18, 18], ["_mtd", -16, -1587, 18, 18], ["_mvy", 0, -1018, 30, 13], ["_mgbb", 0, -146, 24, 24], ["_myb", 0, -700, 24, 24], ["_mpc", 0, -1249, 18, 18], ["_mjk", 0, -82, 19, 16], ["_mhbb", 0, -348, 24, 24], ["_macb", 0, -571, 24, 24], ["_msk", 0, -861, 24, 24], ["_mrbb", 0, 0, 24, 24], ["_mibb", 0, -917, 24, 24], ["_mbz", -22, -469, 12, 12], ["_maz", 0, -1535, 12, 12], ["_mvd", 0, -491, 30, 30], ["_mud", 0, -1369, 30, 30], ["_mzd", 0, -1513, 18, 18], ["_myd", 0, -1665, 18, 18], ["_mdm", 0, -426, 15, 15], ["_myg", 0, -230, 36, 26], ["_mjbb", 0, -648, 24, 24], ["_mhab", 0, -1119, 30, 30], ["_mkk", 0, -945, 29, 29], ["_mfw", 0, -599, 13, 13], ["_mbw", 0, -1153, 20, 20], ["_mej", -17, -599, 17, 17], ["_mom", -28, 0, 4, 16], ["_mfh", 0, -1637, 24, 24], ["_mzo", 0, -978, 36, 36], ["_mxr", 0, -525, 20, 20], ["_maw", 0, -28, 20, 20], ["_mlbb", 0, -752, 16, 16], ["_mmbb", 0, -1299, 16, 16], ["_mnbb", -20, -1299, 16, 16], ["_mkbb", 0, -833, 24, 24], ["_mld", 0, -728, 20, 20], ["_mobb", 0, -1063, 24, 24], ["_mwd", 0, -445, 20, 20], ["_mdh", 0, -620, 24, 24], ["_mir", 0, -102, 24, 24], ["_mrc", 0, -1091, 24, 24], ["_mae", 0, -676, 20, 20], ["_mkd", -16, -1535, 20, 20], ["_mdt", 0, -130, 16, 12], ["_mct", 0, -1205, 16, 12], ["_mft", 0, -410, 16, 12], ["_muk", 0, -1221, 24, 24], ["_msbb", 0, -1035, 24, 24], ["_mpbb", 0, -1559, 24, 24], ["_mqbb", 0, -52, 19, 23], ["_mvbb", 0, -1453, 28, 28], ["_muc", 0, -549, 18, 18], ["_mx", 0, -1319, 30, 30], ["_my", 0, -376, 30, 30], ["_mtk", 0, -320, 24, 24], ["_mtbb", 0, -1715, 24, 24], ["_mzb", 0, -202, 24, 24], ["_mwbb", 0, -1177, 24, 24], ["_mxbb", 0, -1485, 24, 24], ["_mybb", 0, -1425, 24, 24], ["_mzbb", 0, -772, 24, 24], ["_mbcb", 0, -1609, 24, 24]],
-                    "bg_width": 36.0
-                }
-            },
-            "signed_in_username": "",
+            "airplay": true,
             "appleIconUrls": {
                 "": "https:\/\/s.ytimg.com\/yts\/mobile\/img\/apple-touch-icon-57x57-precomposed-vflKsw8eJ.png",
                 "144x144": "https:\/\/s.ytimg.com\/yts\/mobile\/img\/apple-touch-icon-144x144-precomposed-vflwq-hLZ.png",
-                "72x72": "https:\/\/s.ytimg.com\/yts\/mobile\/img\/apple-touch-icon-72x72-precomposed-vflNiFbcD.png",
-                "114x114": "https:\/\/s.ytimg.com\/yts\/mobile\/img\/apple-touch-icon-114x114-precomposed-vflLGbwkc.png"
+                "114x114": "https:\/\/s.ytimg.com\/yts\/mobile\/img\/apple-touch-icon-114x114-precomposed-vflLGbwkc.png",
+                "72x72": "https:\/\/s.ytimg.com\/yts\/mobile\/img\/apple-touch-icon-72x72-precomposed-vflNiFbcD.png"
             },
-            "supportsPersistence": false,
+            "externalSpriteCssPaths": null,
+            "isTablet": false,
+            "localeName": "Worldwide",
+            "signed_in_username": "",
+            "isWifi": true,
+            "client_version": "1.20160130",
+            "supportsSms": false,
+            "playerType": "desktop",
+            "lastReloadReason": "",
+            "build_signature": "en:9413469,9415048,9415297,9415398,9415575,9416475,9417035,9417482,9417664,9417755,9418141,9418543,9418755,9419979,9420304,9420410,9420452,9420790,9420951,9421226,9421404,9421625,9422250,9422376,9422425,9422575,9422596,9422849,9422928,9422972,9423032,9423052,9423056,9423089,9423185,9423272,9423465,9423553,9423555,9423649,9423661,9423704,9423911,9423990,9424039,9424159,9424225,9424255,9424262,9424666,9424672,9424678,9424702,9424781,9424796,9424900,9425033,9425330,9425553,9425931,9426022,9426095,9426402,9426466,9426542,9426969,9426994,9427021,9427068,9427175,9427237,9427294,9427310,9427491,9427693,9427895,9427995,9428120,9428199",
+            "consentState": 0,
+            "supportsPersistence": true,
+            "supportsCssScroller": false,
+            "loginURLFormat": "https:\/\/accounts.google.com\/ServiceLogin?ltmpl=mobile\u0026continue=https%3A%2F%2Fm.youtube.com%2Fsignin%3Ffeature%3Dblazerbootstrap%26hl%3Den%26app%3Dm%26next%3D_NEXT_URL_PLACEHOLDER_%26action_handle_signin%3Dtrue\u0026passive=true\u0026uilel=3\u0026hl=en\u0026service=youtube",
+            "languageName": "English",
+            "psuggestToken": null,
+            "gapiParams": {
+                "LOGGED_IN": false,
+                "SESSION_INDEX": null,
+                "GAPI_HOST": "https:\/\/apis.google.com",
+                "GAPI_HINT_PARAMS": "m;\/_\/scs\/abc-static\/_\/js\/k=gapi.gapi.en.031mdWrIyGE.O\/m=__features__\/am=AAQ\/rt=j\/d=1\/rs=AHpOoo9LVH8q4HIB6ymfgTF00d12dbkTeA",
+                "GAPI_LOCALE": "en_US",
+                "DELEGATED_SESSION_ID": null,
+                "GAPI_HINT_OVERRIDE": false
+            },
+            "supportsAutoplay": true,
+            "sts": 16828,
+            "build_id": 113551847,
+            "isBigTablet": false,
+            "signed_in_email": "",
+            "resizedPlayer": false,
+            "isRtl": false,
             "onDemandModules": {
-                "mobile_blazer_noncore_mod": {
-                    "src": "https:\/\/s.ytimg.com\/yts\/jsbin\/mobile-blazer-nirvana-tablet-fr-vflqrliQ1\/noncore.js",
-                    "dependency": []
-                },
                 "mobile_blazer_remote_mod": {
-                    "src": "https:\/\/s.ytimg.com\/yts\/jsbin\/mobile-blazer-nirvana-tablet-fr-vflqrliQ1\/remote.js",
+                    "src": "https:\/\/s.ytimg.com\/yts\/jsbin\/mobile-blazer-nirvana-phone-vflkA5jiz\/remote.js",
                     "dependency": ["mobile_blazer_pubsub_mod"]
                 },
                 "ext_googleanalytics": {
                     "src": "https:\/\/www.google-analytics.com\/ga.js",
                     "dependency": []
                 },
-                "mobile_blazer_pubsub_mod": {
-                    "src": "https:\/\/s.ytimg.com\/yts\/jsbin\/mobile-blazer-nirvana-tablet-fr-vflqrliQ1\/pubsub.js",
+                "mobile_blazer_noncore_mod": {
+                    "src": "https:\/\/s.ytimg.com\/yts\/jsbin\/mobile-blazer-nirvana-phone-vflkA5jiz\/noncore.js",
                     "dependency": []
                 }
             },
-            "sts": 16826,
-            "isTablet": true,
-            "googlePlusShareUrl": "https:\/\/plus.google.com\/share",
-            "channelUrl": null,
-            "locale": "fr_FR",
-            "language": "fr",
-            "build_id": 113235290,
-            "airplay": false,
-            "consentState": 0,
-            "psuggestToken": null,
-            "supportsLiveStream": true,
-            "isRtl": false,
-            "variants_checksum": "f404c432dd2067283984a0ed77394753",
-            "supportsCastV2": false,
-            "propagatedAjaxParams": {},
-            "supportsSms": true,
-            "isBigTablet": false,
-            "signed_in_email": "",
-            "privacyPolicyUrl": "https:\/\/www.google.fr\/intl\/fr\/policies\/privacy\/",
-            "build_label": "youtube_20160128_RC0",
-            "isLightweight": false,
             "lateLoadedModules": {
-                "mobile_blazer_mobileplayer_nirvana_tablet_mod": {
+                "mobile_blazer_pubsub_mod": {
                     "dependency": []
+                },
+                "mobile_blazer_desktopplayer_mod": {
+                    "dependency": ["mobile_blazer_pubsub_mod"]
                 }
             },
-            "gaiaPhotoUrl": null,
-            "languageName": "Français",
-            "loginPlaceHolder": "_NEXT_URL_PLACEHOLDER_",
-            "isWifi": true,
-            "gapiParams": {
-                "GAPI_HOST": "https:\/\/apis.google.com",
-                "DELEGATED_SESSION_ID": null,
-                "GAPI_HINT_PARAMS": "m;\/_\/scs\/abc-static\/_\/js\/k=gapi.gapi.en.031mdWrIyGE.O\/m=__features__\/am=AAQ\/rt=j\/d=1\/rs=AHpOoo9LVH8q4HIB6ymfgTF00d12dbkTeA",
-                "GAPI_HINT_OVERRIDE": false,
-                "GAPI_LOCALE": "fr_FR",
-                "LOGGED_IN": false,
-                "SESSION_INDEX": null
-            },
-            "externalSpriteCssPaths": null,
-            "client_version": "1.20160128",
-            "supportsCssScroller": true,
-            "inProduction": true,
-            "deviceClassification": {
-                "cbrand": "lg",
-                "cos": "Android",
-                "cmodel": "v400",
-                "cver": "html5",
-                "cplayer": "BLAZER_PLAYER_INLINE",
-                "cplatform": "TABLET",
-                "c": "MWEB",
-                "cbrver": "44.0.2403.133",
-                "cosver": "5.0.2",
-                "cbr": "Chrome"
-            },
+            "supportsCastV2": false,
             "experiments": {
-                "ids": [9407194, 9414809, 9418581, 9419452, 9421527, 9424488, 9426162, 9426238, 9427144, 9427317, 9427345],
+                "ids": [],
                 "flags": {
+                    "ytu_landing_page_button_color": "",
                     "searchbox_upgrade_mobile": true,
-                    "send_pyv_search_as_delayed": true,
-                    "ytu_landing_page_button_color": ""
+                    "send_pyv_search_as_delayed": true
                 },
-                "fexp": "9407194,9414809,9418581,9419452,9420452,9421527,9422596,9423661,9424488,9426162,9426238,9426402,9427144,9427317,9427345"
+                "fexp": "9420452,9422596,9423661,9426402"
             },
-            "localeName": "Monde entier",
-            "resizedPlayer": false,
+            "isLightweight": false,
+            "deviceClassification": {
+                "cver": "html5",
+                "cos": "iPhone",
+                "cmodel": "iphone",
+                "c": "MWEB",
+                "cbr": "Safari Mobile",
+                "cplatform": "MOBILE",
+                "cbrand": "apple",
+                "cosver": "9_2_1",
+                "cbrver": "9.0.13D15",
+                "cplayer": "UNIPLAYER"
+            },
+            "loginPlaceHolder": "_NEXT_URL_PLACEHOLDER_",
+            "gaiaPhotoUrl": null,
+            "sessionIndex": null,
+            "channelUrl": null,
+            "language": "en",
+            "supportsLiveStream": true,
+            "googlePlusShareUrl": "https:\/\/plus.google.com\/share",
+            "build_timestamp": 1454356271,
+            "privacyPolicyUrl": "https:\/\/www.google.com\/intl\/en\/policies\/privacy\/",
+            "variants_checksum": "021a79e96af6b6c8100e3877930c72ed",
+            "inProduction": true,
+            "thumbnail_sizes": {
+                "_mvw": [24, 24],
+                "THUMBNAIL_playlist_header": [0, 0],
+                "THUMBNAIL_compact_playlist": [120, 72],
+                "THUMBNAIL_playlist_panel_video": [120, 72],
+                "_mwdb": [28, 28],
+                "THUMBNAIL_compact_radio": [120, 72],
+                "THUMBNAIL_playlist_video": [120, 72],
+                "THUMBNAIL_compact_movie": [120, 72],
+                "THUMBNAIL_guide_avatar": [28, 28],
+                "_myf": [60, 60],
+                "_mgu": [120, 72],
+                "THUMBNAIL_unlimited_header": [480, 82],
+                "THUMBNAIL_feed_entry_owner": [28, 28]
+            },
             "gl": "US",
-            "build_signature": "fr:9407194,9413431,9413469,9414809,9415049,9415297,9415398,9415575,9416475,9417035,9417482,9417664,9417755,9418141,9418543,9418581,9418755,9419452,9419979,9420304,9420452,9420790,9420951,9421226,9421404,9421527,9421625,9422250,9422376,9422425,9422575,9422596,9422849,9422928,9422972,9423032,9423052,9423056,9423089,9423185,9423272,9423465,9423553,9423555,9423649,9423661,9423704,9423911,9423990,9424039,9424159,9424225,9424255,9424262,9424488,9424666,9424672,9424678,9424702,9424781,9424796,9424900,9425033,9425330,9425553,9425931,9426022,9426095,9426162,9426238,9426402,9426466,9426543,9426969,9426994,9427022,9427068,9427144,9427237,9427294,9427310,9427317,9427345,9427491,9427694,9427762,9427895,9427995,9428199",
-            "supportsAutoplay": true
+            "propagatedAjaxParams": {},
+            "build_label": "youtube_20160201_RC3",
+            "locale": "en_US",
+            "spriteInfo": {
+                "main": {
+                    "urls": {
+                        "low": "https:\/\/s.ytimg.com\/yts\/imgbin\/mobile-atom_phone-set-low-vflqmjeKb.png",
+                        "high": "https:\/\/s.ytimg.com\/yts\/imgbin\/mobile-atom_phone-set-high-vfl0567yj.png",
+                        "vhigh": "https:\/\/s.ytimg.com\/yts\/imgbin\/mobile-atom_phone-set-vhigh-vflvIghb2.png"
+                    },
+                    "styles": [["_mvk", 0, -481, 24, 24], ["_mwbb", 0, -1624, 24, 24], ["_mqc", 0, -1127, 18, 18], ["_mxd", -16, -1253, 20, 20], ["_mlv", 0, -1351, 24, 24], ["_moe", 0, -1149, 12, 20], ["_mne", 0, -537, 24, 24], ["_mpt", 0, -1253, 12, 8], ["_mlr", -23, -812, 8, 8], ["_mwi", 0, -357, 13, 14], ["_mqj", 0, -1217, 32, 32], ["_mgk", 0, -1531, 29, 29], ["_mez", 0, -867, 12, 12], ["_mdz", -22, -1127, 12, 12], ["_msd", 0, -1077, 18, 18], ["_mtd", 0, -790, 18, 18], ["_mvy", 0, -615, 30, 13], ["_mibb", 0, -28, 24, 24], ["_myb", 0, -453, 24, 24], ["_mpc", 0, -565, 18, 18], ["_mjk", -17, -357, 19, 16], ["_mjbb", 0, -1099, 24, 24], ["_mccb", 0, -198, 24, 24], ["_msk", 0, -118, 24, 24], ["_mtbb", 0, -1049, 24, 24], ["_mkbb", 0, -1447, 24, 24], ["_mbz", -24, -1327, 12, 12], ["_maz", 0, -1173, 12, 12], ["_mzd", 0, -768, 18, 18], ["_myd", -16, -1277, 18, 18], ["_mdm", 0, -298, 15, 15], ["_myg", 0, -986, 36, 26], ["_mlbb", 0, -397, 24, 24], ["_mhab", 0, -710, 30, 30], ["_mkk", 0, -1016, 29, 29], ["_mfw", -22, -768, 13, 13], ["_mbw", 0, -632, 20, 20], ["_mej", -16, -867, 17, 17], ["_mom", -24, -632, 4, 16], ["_mfh", 0, 0, 24, 24], ["_mzo", 0, -317, 36, 36], ["_mxr", 0, -839, 24, 24], ["_maw", -16, -1149, 20, 20], ["_mnbb", 0, -377, 16, 16], ["_mobb", 0, -690, 16, 16], ["_mpbb", 0, -966, 16, 16], ["_mmbb", 0, -226, 24, 24], ["_mld", 0, -1379, 20, 20], ["_mqbb", 0, -910, 24, 24], ["_mwd", 0, -1327, 20, 20], ["_mdh", 0, -1503, 24, 24], ["_mir", 0, -1475, 24, 24], ["_mrc", 0, -90, 24, 24], ["_mae", 0, -146, 20, 20], ["_mkd", 0, -744, 20, 20], ["_mdt", 0, -1431, 16, 12], ["_mct", -20, -690, 16, 12], ["_mft", 0, -254, 16, 12], ["_muk", 0, -1299, 24, 24], ["_mubb", 0, -1596, 24, 24], ["_mrbb", 0, -509, 24, 24], ["_msbb", 0, -812, 19, 23], ["_mxbb", 0, -1564, 28, 28], ["_muc", -16, -888, 18, 18], ["_mx", 0, -656, 30, 30], ["_my", 0, -56, 30, 30], ["_mtk", 0, -1189, 24, 24], ["_mvbb", 0, -170, 24, 24], ["_mzb", 0, -1652, 24, 24], ["_mybb", 0, -938, 24, 24], ["_mzbb", 0, -1403, 24, 24], ["_macb", 0, -425, 24, 24], ["_mbcb", 0, -270, 24, 24], ["_mdcb", 0, -587, 24, 24]],
+                    "bg_height": 1676.0,
+                    "bg_width": 36.0
+                },
+                "desktop_player": {
+                    "urls": {
+                        "low": "https:\/\/s.ytimg.com\/yts\/imgbin\/mobile-desktop_player-set-low-vflICTBS4.png",
+                        "high": "https:\/\/s.ytimg.com\/yts\/imgbin\/mobile-desktop_player-set-high-vfl-2BX_x.png",
+                        "vhigh": "https:\/\/s.ytimg.com\/yts\/imgbin\/mobile-desktop_player-set-vhigh-vfl7cLV1j.png"
+                    },
+                    "styles": [["_myob", 0, -46, 16, 16], ["_mg", 0, -267, 12, 12], ["_mi", -16, -267, 24, 24], ["_mk", -8, -337, 9, 9], ["_mm", -16, -295, 24, 24], ["_mo", -22, -323, 9, 9], ["_ms", 0, -323, 4, 9], ["_mt", -8, -323, 10, 10], ["_mrxb", -44, -313, 42, 42], ["_msxb", -46, -158, 42, 42], ["_muyb", -46, -112, 42, 42], ["_mtyb", 0, 0, 42, 42], ["_mwyb", -46, -451, 42, 42], ["_mvyb", -46, 0, 42, 42], ["ytp-button-volume-0", -46, -66, 42, 42], ["ytp-button-volume-1", 0, -66, 42, 42], ["ytp-button-volume-2", -44, -267, 42, 42], ["ytp-button-volume-mute", -46, -405, 42, 42], ["_mdyb", 0, -204, 84, 59], ["_mrac", 0, -451, 42, 42], ["_mqac", 0, -405, 42, 42], ["_mvtb", -46, -359, 42, 42], ["_mutb", 0, -359, 42, 42], ["ytp-subtitles-intl-button-active", 0, -112, 42, 42], ["ytp-subtitles-intl-button", 0, -158, 42, 42]],
+                    "bg_height": 493.0,
+                    "bg_width": 88.0
+                },
+                "remote": {
+                    "urls": {
+                        "low": "https:\/\/s.ytimg.com\/yts\/imgbin\/mobile-atom_remote-set-low-vflBgP7dp.png",
+                        "high": "https:\/\/s.ytimg.com\/yts\/imgbin\/mobile-atom_remote-set-high-vfljmYxbp.png",
+                        "vhigh": "https:\/\/s.ytimg.com\/yts\/imgbin\/mobile-atom_remote-set-vhigh-vflZQl7Q-.png"
+                    },
+                    "styles": [["_mts", 0, -24, 24, 24], ["_mss", 0, -52, 24, 24], ["_mqq", -28, -88, 36, 36], ["_mcr", -28, 0, 40, 40], ["_mar", -28, -44, 40, 40], ["_mlq", 0, 0, 20, 20], ["_mkq", 0, -80, 24, 20]],
+                    "bg_height": 124.0,
+                    "bg_width": 68.0
+                }
+            }
         };
         window.images = {
-            "zeroStateSubs": "https:\/\/s.ytimg.com\/yts\/mobile\/img\/zero_state_subs-vflziK5fn.png",
-            "defaultProfile": "https:\/\/s.ytimg.com\/yts\/img\/avatar_48-vfllY0UTT.png",
-            "musicpassCheckmark": "https:\/\/s.ytimg.com\/yts\/img\/musicpass\/checkmark-vflxy9dWj.png",
-            "consentLightboxMasthead": "https:\/\/s.ytimg.com\/yts\/mobile\/img\/consent_lightbox_masthead-vfl5wdzhR.png",
-            "musicpassLogo": "https:\/\/s.ytimg.com\/yts\/img\/musicpass\/yt_nirvana_mobile_logo-vflbOMaYG.png",
-            "musicpassHero": "https:\/\/s.ytimg.com\/yts\/img\/musicpass\/yt_nirvana_mobile_hero-vflrTJ-ae.jpg",
-            "musicpassIconOffline": "https:\/\/s.ytimg.com\/yts\/img\/musicpass\/yt_nirvana_mobile_icon_offline-vflsZZlLB.png",
             "pairingNormal": "https:\/\/s.ytimg.com\/yts\/mobile\/img\/promo_mdx-vflTsv75I.png",
-            "musicpassIconNoAds": "https:\/\/s.ytimg.com\/yts\/img\/musicpass\/yt_nirvana_mobile_icon_no_ads-vflZGwb_o.png",
-            "tipJarCheck": "https:\/\/s.ytimg.com\/yts\/mobile\/img\/checkmark-vfle9OFTf.png",
-            "musicpassBackgroundBanner": "https:\/\/s.ytimg.com\/yts\/img\/musicpass\/yt_nirvana_mobile_banner-vfleWtkAd.png",
-            "signInPromo": "https:\/\/s.ytimg.com\/yts\/mobile\/img\/sign_in_promo-vfluaJRxi.png",
-            "musicpassFeature8": "https:\/\/s.ytimg.com\/yts\/img\/musicpass\/yt_nirvana_mobile_feature_8-vflNG-D9Q.jpg",
-            "pairingSuccess": "https:\/\/s.ytimg.com\/yts\/mobile\/img\/promo_mdx_success-vflB4fJyj.png",
-            "musicpassIconBackground": "https:\/\/s.ytimg.com\/yts\/img\/musicpass\/yt_nirvana_mobile_icon_background-vfle--OBZ.png",
             "musicpassFeature4": "https:\/\/s.ytimg.com\/yts\/img\/musicpass\/yt_nirvana_mobile_feature_4-vflK8iQTH.jpg",
             "musicpassFeature5": "https:\/\/s.ytimg.com\/yts\/img\/musicpass\/yt_nirvana_mobile_feature_5-vflJJLpQI.jpg",
             "musicpassFeature6": "https:\/\/s.ytimg.com\/yts\/img\/musicpass\/yt_nirvana_mobile_feature_6-vflUXcKIX.jpg",
             "musicpassFeature7": "https:\/\/s.ytimg.com\/yts\/img\/musicpass\/yt_nirvana_mobile_feature_7-vflTuRFaa.jpg",
             "musicpassFeature1": "https:\/\/s.ytimg.com\/yts\/img\/musicpass\/yt_nirvana_mobile_feature_1-vflP0JM5Q.png",
             "musicpassFeature2": "https:\/\/s.ytimg.com\/yts\/img\/musicpass\/yt_nirvana_mobile_feature_2-vflM5Fm1o.png",
-            "musicpassFeature3": "https:\/\/s.ytimg.com\/yts\/img\/musicpass\/yt_nirvana_mobile_feature_3-vfl9cXjeD.png"
+            "musicpassFeature3": "https:\/\/s.ytimg.com\/yts\/img\/musicpass\/yt_nirvana_mobile_feature_3-vfl9cXjeD.png",
+            "signInPromo": "https:\/\/s.ytimg.com\/yts\/mobile\/img\/sign_in_promo-vfluaJRxi.png",
+            "musicpassFeature8": "https:\/\/s.ytimg.com\/yts\/img\/musicpass\/yt_nirvana_mobile_feature_8-vflNG-D9Q.jpg",
+            "musicpassIconNoAds": "https:\/\/s.ytimg.com\/yts\/img\/musicpass\/yt_nirvana_mobile_icon_no_ads-vflZGwb_o.png",
+            "musicpassLogo": "https:\/\/s.ytimg.com\/yts\/img\/musicpass\/yt_nirvana_mobile_logo-vflbOMaYG.png",
+            "musicpassBackgroundBanner": "https:\/\/s.ytimg.com\/yts\/img\/musicpass\/yt_nirvana_mobile_banner-vfleWtkAd.png",
+            "zeroStateSubs": "https:\/\/s.ytimg.com\/yts\/mobile\/img\/zero_state_subs-vflziK5fn.png",
+            "tipJarCheck": "https:\/\/s.ytimg.com\/yts\/mobile\/img\/checkmark-vfle9OFTf.png",
+            "musicpassHero": "https:\/\/s.ytimg.com\/yts\/img\/musicpass\/yt_nirvana_mobile_hero-vflrTJ-ae.jpg",
+            "pairingSuccess": "https:\/\/s.ytimg.com\/yts\/mobile\/img\/promo_mdx_success-vflB4fJyj.png",
+            "musicpassIconOffline": "https:\/\/s.ytimg.com\/yts\/img\/musicpass\/yt_nirvana_mobile_icon_offline-vflsZZlLB.png",
+            "musicpassCheckmark": "https:\/\/s.ytimg.com\/yts\/img\/musicpass\/checkmark-vflxy9dWj.png",
+            "musicpassIconBackground": "https:\/\/s.ytimg.com\/yts\/img\/musicpass\/yt_nirvana_mobile_icon_background-vfle--OBZ.png",
+            "consentLightboxMasthead": "https:\/\/s.ytimg.com\/yts\/mobile\/img\/consent_lightbox_masthead-vfl5wdzhR.png",
+            "defaultProfile": "https:\/\/s.ytimg.com\/yts\/img\/avatar_48-vfllY0UTT.png"
         };
     </script>
-    <script src="https://s.ytimg.com/yts/jsbin/mobile-blazer-nirvana-tablet-fr-vflqrliQ1/core.js"></script>
-    <script src="https://s.ytimg.com/yts/jsbin/mobile-blazer-nirvana-tablet-fr-vflqrliQ1/watch.js"></script>
-    <script src="https://s.ytimg.com/yts/jsbin/mobile-blazer-nirvana-tablet-fr-vflqrliQ1/logged_out_users.js"></script>
+    <script src="https://s.ytimg.com/yts/jsbin/mobile-blazer-nirvana-phone-vflkA5jiz/core.js"></script>
+    <script src="https://s.ytimg.com/yts/jsbin/mobile-blazer-nirvana-phone-vflkA5jiz/watch.js"></script>
+    <script src="https://s.ytimg.com/yts/jsbin/mobile-blazer-nirvana-phone-vflkA5jiz/logged_out_users.js"></script>
     <script type="text/javascript">
         function initialize() {
             try {
@@ -548,14 +364,18 @@
             'CSI_ENABLED': true
         });
 
-        yt.setConfig('SEARCHBOX_URL', "https:\/\/s.ytimg.com\/yts\/jsbin\/mobile-searchbox-vflRPQyNP\/mobile-searchbox.js");
+        yt.setConfig('SEARCHBOX_URL', "https:\/\/s.ytimg.com\/yts\/jsbin\/mobile-searchbox-vflTPLYMB\/mobile-searchbox.js");
 
         initialize();
     </script>
-    <script src="https://s.ytimg.com/yts/jsbin/mobile-blazer-nirvana-tablet-fr-vflqrliQ1/mobileplayer_nirvana_tablet.js"></script>
-    <script type="text/javascript" id="late_loaded_mobile_blazer_mobileplayer_nirvana_tablet_mod">
-        notifyScriptLoaded("mobile_blazer_mobileplayer_nirvana_tablet_mod");
+    <script src="https://s.ytimg.com/yts/jsbin/mobile-blazer-nirvana-phone-vflkA5jiz/pubsub.js"></script>
+    <script type="text/javascript" id="late_loaded_mobile_blazer_pubsub_mod">
+        notifyScriptLoaded("mobile_blazer_pubsub_mod");
     </script>
-    <noscript>Veuillez activer JavaScript sur votre navigateur.
+    <script src="https://s.ytimg.com/yts/jsbin/mobile-blazer-nirvana-phone-vflkA5jiz/desktopplayer.js"></script>
+    <script type="text/javascript" id="late_loaded_mobile_blazer_desktopplayer_mod">
+        notifyScriptLoaded("mobile_blazer_desktopplayer_mod");
+    </script>
+    <noscript>Please enable JavaScript on your browser.
   </noscript>
 </html>

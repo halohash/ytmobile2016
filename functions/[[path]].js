@@ -1,3 +1,10 @@
+export async function onRequestOptions() {
+  return new Response(null, {
+    status: 204,
+    headers: corsHeaders,
+  });
+}
+
 export async function onRequest(context) {
   const url = new URL(context.request.url);
 

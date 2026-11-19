@@ -14,7 +14,7 @@ export async function onRequest(context) {
     url.pathname !== "/_get_ads"
   ) {
     return Response.redirect(
-      "https://mobile36.pages.dev/" + url.pathname + url.search,
+      "https://mobile36.pages.dev" + url.pathname + url.search,
       302
     );
   }

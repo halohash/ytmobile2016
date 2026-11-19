@@ -6,10 +6,8 @@ export async function onRequest(context) {
     url.pathname !== "/feed" &&
     url.pathname !== "/_get_ads"
   ) {
-    url.searchParams.delete("ajax");
-
     return Response.redirect(
-      url.origin + "/api" + url.pathname + url.search,
+      "https://mobile36.pages.dev/" + url.pathname + url.search,
       302
     );
   }

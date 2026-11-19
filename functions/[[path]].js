@@ -1,7 +1,20 @@
-export async function onRequestOptions() {
+const corsHeaders = {
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+  "Access-Control-Allow-Headers": "*",
+  "Access-Control-Max-Age": "86400",
+};
+
+export async function onRequestOptions(context) {
+  
+  const requestHeaders = context.request.headers.get("Access-Control-Request-Headers");
+
   return new Response(null, {
     status: 204,
-    headers: corsHeaders,
+    headers: {
+      ...corsHeaders,
+      "Access-Control-Allow-Headers": requestHeaders || "*",
+    },
   });
 }
 
@@ -19,5 +32,11 @@ export async function onRequest(context) {
     );
   }
 
-  return context.next();
+  const response = await context.next();
+
+  Object.entries(corsHeaders).forEach(([key, value]) => {
+    response.headers.set(key, value);
+  });
+
+  return response;
 }
